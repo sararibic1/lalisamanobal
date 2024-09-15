@@ -1,0 +1,479 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #433e3e; /* Grey background for the body */
+}
+
+/* Header Styling */
+header {
+    background-color: #000; /* Pure black header */
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+/* Add underline and overline effect */
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a::before {
+    top: 0;
+}
+
+nav ul li a::after {
+    bottom: 0;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Container for Text and Video */
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f8c8dc; /* Soft pink background */
+    border-radius: 10px;
+}
+
+/* Info Container (Text) Styling */
+.info-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #080808; /* Dark grey text */
+}
+
+.info-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #080808;
+}
+
+/* Video Title */
+.video-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #070707;
+}
+
+/* Larger Video Container */
+.video-container iframe {
+    border: 4px solid #333;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* About Container */
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(248, 200, 220, 0.9); /* Soft pink transparent container */
+    border-radius: 10px;
+}
+
+/* Info Section Layout */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+/* Reverse Flex for alternating sections */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text on the Left */
+.text-left {
+    text-align: justify;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.text-left h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333; /* Dark grey text */
+}
+
+.text-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Image on the Right */
+.image-right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.image-right img {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid #333;
+}
+
+
+/* Responsive Image */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #808080; /* Grey background */
+    color: white;
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a::before {
+    top: 0;
+}
+
+nav ul li a::after {
+    bottom: 0;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* News Container */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+/* News Item */
+.news-item {
+    flex: 1 1 calc(33.333% - 40px); /* Three items per row */
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05); /* Slightly widens on hover */
+}
+
+.news-content {
+    position: relative;
+}
+
+.news-content img {
+    width: 100%;
+    display: block;
+}
+
+.news-content h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Transparent overlay */
+    color: #fff;
+    padding: 20px;
+    transition: bottom 0.3s ease;
+}
+
+.news-item:hover .overlay {
+    bottom: 0; /* Slides in from the bottom on hover */
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    text-align: justify;
+    padding: 0 10px; /* Ensures text isn't too close to edges */
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* Media Containers */
+.media-container {
+    background-color: rgba(248, 200, 220, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 15px;
+    width: 80%;
+}
+
+.media-container h2 {
+    color: #080808;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.media-container p {
+    color: #080808;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+/* Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #060606;
+}
+
+.social-links i {
+    margin-right: 10px;
+    color: rgba(248, 247, 250, 0.9); 
+}
+
+.social-links a {
+    color: #09090a;
+    text-decoration: none;
+}
+
+/* Music Links */
+.music-links {
+    list-style: none;
+    padding: 0;
+}
+
+.music-links li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f9f9fa;
+}
+
+.music-links i {
+    margin-right: 10px;
+    color: #faf9f9; 
+}
+
+.music-links a {
+    color: #060606;
+    text-decoration: none;
+}
+
+/* Video Links */
+.video-links iframe {
+    margin: 20px 0;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .media-container {
+        width: 90%;
+    }
+
+    .video-links iframe {
+        width: 100%;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-title {
+    clear: both;
+    padding: 20px 10px 10px 10px;
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Gallery Row */
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Gallery Item */
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 22%; /* Adjusted to fit 4 images per row */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .gallery {
+        width: 46%; /* Two images per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        width: 96%; /* One image per row */
+    }
+}
+
+
+
+
+
